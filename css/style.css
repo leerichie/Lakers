@@ -250,6 +250,7 @@ img {
   overflow: hidden;
   padding: 10px;
 }
+
 #header div a.logo {
   float: left;
   margin: 0 0 0 30px;
@@ -271,16 +272,17 @@ img {
   margin: 0;
   padding: 30px 0 0;
   text-align: justify;
-  width: 820px;
+  width: 830px;
 }
 #header div ul li {
   display: inline-block;
+  white-space: nowrap;
   flex: 1;
   *float: left; /* Needed for IE7 and old versions */
-  margin: 0 35px;
+  margin: 0 30px;
   padding: 0;
   position: relative;
-  width: auto;
+  width: auto; /* Adjust width if needed for specific layout */
 }
 
 /* ---------- main navbar--------*/
@@ -327,6 +329,7 @@ img {
   top: 24px;
   width: 106px;
   z-index: 90;
+  white-space: nowrap;
 }
 #header div ul li.menu:hover ul.primary,
 #header div ul li.menu ul#selected.primary {
@@ -340,6 +343,7 @@ img {
   float: none;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
 /*----------------------------------------body-home-styles---------------------------------------*/
@@ -1266,7 +1270,11 @@ img {
 .sponsors-column {
   flex: 10%;
   padding: 2px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
+
 .sponsors-row {
   display: flex;
   justify-content: center;
